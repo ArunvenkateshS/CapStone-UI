@@ -26,7 +26,7 @@ function AddExpense() {
              alert("Successfully Sent, It Will Take 2 Bussiness Days To Know The Update :)")
         navigate("/expensetable");    
         }catch(error){
-            console.error('error posting expense',error)
+            console.error('posting expense',error)
         }
     };
 
