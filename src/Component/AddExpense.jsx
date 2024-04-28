@@ -1,9 +1,9 @@
 import React from 'react'
 import axios from 'axios';
 import { useState } from 'react';
-import Header from './ManagerHeader';
 import Footer from './Footer';
 import { useNavigate } from 'react-router-dom';
+import Header from './Header';
 
 function AddExpense() {
     const [expenseType,setExpenseType]=useState('');
