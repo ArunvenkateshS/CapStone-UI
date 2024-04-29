@@ -35,3 +35,7 @@ export const getExpenseDetail = (empId) => {
 export const updateExpenseDetail = (empId,expenseDetail) => {
     return axios.put("http://localhost:8080/expensedetail/" + empId,expenseDetail);
 }
+
+export const getEmployee = (empId) => {
+    return axios.get("http://localhost:8080/employee/" + empId);
+}
