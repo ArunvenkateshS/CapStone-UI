@@ -29,6 +29,17 @@ const SignupPage=()=>{
 
     const handleSubmit=async(e)=>{
         e.preventDefault();
+
+        if( !validateEmail(formData.email)){
+           
+            alert('Invalid Email Format');
+            return;
+        }
+        if( !validatePassword(formData.password)){
+           
+            alert('Invalid Password Format');
+            return;
+        }
         try{
             const response=await fetch('http://localhost:8080/signup',{
                 method:'POST',
@@ -45,6 +56,16 @@ const SignupPage=()=>{
         } catch(error){
             console.error('Error',error);
         }
+    };
+    const validatePassword =(password) =>{
+        const passwordRegex=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.{8,})/;
+        console.log(password);
+        return passwordRegex.test(password);
+    };
+    const validateEmail=(email)=>{
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+       
+        return emailRegex.test(email);
     };
 
     return (
