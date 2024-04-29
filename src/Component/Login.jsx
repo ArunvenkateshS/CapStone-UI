@@ -37,7 +37,8 @@ const Login = () => {
   return (
     <div>
         <LoginHeader></LoginHeader>
-        <div className='container'>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <div className='container' style={{ marginTop: '-160px',width:'500px'}}>
             <div className='row'>
                 <div className='card'>
                     <h2 className='text-center'>Login</h2>
@@ -55,7 +56,7 @@ const Login = () => {
                         </div>
 
                         <div className='form-group mb-2'>
-                        <label className='form-label'>password : </label>
+                        <label className='form-label'>Password : </label>
                         <input type='password'
                         placeholder='Please Enter The Password'
                         name='password'
@@ -66,11 +67,14 @@ const Login = () => {
                         </div>
 
                         </form>
-                        <button className='btn btn-success' onClick={loginEmployee}>LogIn</button>
+                        <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
+                        <button className='btn btn-success' onClick={loginEmployee}>Login</button>
+                        </div>
                     </div>
                 </div>
             </div>
                     
+        </div>
         </div>
         <Footer></Footer>
     </div>

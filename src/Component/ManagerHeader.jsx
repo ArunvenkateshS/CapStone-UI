@@ -11,21 +11,22 @@ const Header = () => {
   }
   return (
     <div className='ManagerHeader'>
-    <nav className="navbar navbar-expand-lg navbar-light bg-light" >
-  <a className="navbar-brand" href="#">
-    <img src={logo} width="125" height="75" alt=""></img>
-  </a>
-  <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div className="navbar-nav">
-      <a className="nav-item nav-link" href="/employees">All Employee Details</a>
-      <a className="nav-item nav-link" href="/expensetable">Expense History</a>
-      <a className="nav-item nav-link " href="/pendinglist">Pending Request History</a>
-      <button className='btn btn-secondary btn-sm' onClick={logout}>Logout</button>
-    </div>
-  </div>
-</nav>
+      <nav className="navbar navbar-expand-lg" style={{backgroundColor: 'black', color: 'white'}}>
+        <a className="navbar-brand" href="#">
+          <img src={logo} width="125" height="75" alt=""></img>
+        </a>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+            <a className="nav-item nav-link" href="/employees" style={{color: 'white'}}>All Employee Details</a>
+            <a className="nav-item nav-link" href="/expensetable" style={{color: 'white'}}>Expense History</a>
+            <a className="nav-item nav-link " href="/pendinglist" style={{color: 'white'}}>Pending Request History</a>
+            <button className='btn btn-secondary btn-sm' onClick={logout} style={{color: 'white'}}>Logout</button>
+          </div>
+        </div>
+      </nav>
     </div>
   )
+  
 }
 
 export default Header

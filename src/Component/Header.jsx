@@ -20,21 +20,21 @@ const Header = () => {
     navigate("/login");
   }
   return (
-   <div>
-    <nav className="navbar navbar-expand-lg navbar-light bg-light" >
-  <a className="navbar-brand" href="#">
-    <img src={logo} width="125" height="75" alt=""></img>
-  </a>
-  <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div className="navbar-nav">
-      <a className="nav-item nav-link" href={path}>Home</a>
-      <button className='btn btn-secondary btn-sm' onClick={logout}>Logout</button>
+    <div style={{ backgroundColor: 'black', color: 'white' }}>
+      <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: 'black', color: 'white' }}>
+        <a className="navbar-brand" href="#" style={{ color: 'white' }}>
+          <img src={logo} width="125" height="75" alt=""></img>
+        </a>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup" style={{ backgroundColor: 'black', color: 'white' }}>
+          <div className="navbar-nav">
+            <a className="nav-item nav-link" href={path} style={{ color: 'white' }}>Home</a>
+            <button className='btn btn-secondary btn-sm' onClick={logout} style={{ color: 'white' }}>Logout</button>
+          </div>
+        </div>
+      </nav>
     </div>
-  </div>
-</nav>
-   </div>
-
-  )
+  );
+  
 }
 
 export default Header

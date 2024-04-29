@@ -51,7 +51,8 @@ const SignupPage=()=>{
       <div>
       
       <SimpleHeader></SimpleHeader>
-        <div className='container'>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <div className='container' style={{ marginTop: '-160px',width:'500px'}}>
             <div className='row'>
                 <div className='card'>
                     <h2 className='text-center'>Sign Up</h2>
@@ -87,12 +88,14 @@ const SignupPage=()=>{
  
             
             </form>
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
             <button className='btn btn-success' onClick={handleSubmit}>Sign Up</button>
-           
+           </div>
                     </div>
                 </div>
             </div>
                     
+        </div>
         </div>
         <Footer></Footer>
     </div>
