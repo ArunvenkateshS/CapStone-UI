@@ -60,15 +60,15 @@ const loopEffect = () => {
 
 const addIfRejected = (expenseDetail,expenseType,amount) => {
     switch(expenseType) {
-        case "MEDICAL":
+        case "medical":
+            expenseDetail.medical += amount;
             console.log(expenseDetail.medical);
-          expenseDetail.medical += amount;
           break;
-        case "TRAVEL":
+        case "travel":
             expenseDetail.travel += amount;
             console.log(expenseDetail.travel);
           break;
-        case "INTERNET":
+        case "internet":
             expenseDetail.internet += amount;
             console.log(expenseDetail.internet);
           break;
